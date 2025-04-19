@@ -1,0 +1,15 @@
+tray = None
+icon = None
+text = None
+caller = None
+hotkey = "f8"
+config = None
+reponse = None
+log_path = None
+modified = False
+controller = None
+always_ask = True
+text_handler = None
+is_recording = False
+speech_service = None
+reponse_handler = None
