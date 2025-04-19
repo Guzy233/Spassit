@@ -323,14 +323,4 @@ def run_QtApp():
     Globals.tray = TrayIcon(Globals.icon)
     Globals.tray.show()
     Globals.caller = FuncCaller()
-    if Globals.config["tips"]:
-        info(
-            "欢迎使用Spassit！\n这是一个基于网络语音识别及大语言模型处理的智能语音助手！"
-            "\n请双击托盘图标打开命令行界面,按f8开始录音,松手结束录音，进行处理\n"
-            "若不希望再次看到此信息，请修改config.json中的“tips”字段为false",
-            buttons=QMessageBox.Ok,
-        )
-
-        info("所用测试资源如语音识别，大语言模型api来自项目组成员，请勿滥用！在config.json中可以添加自定义资源apikey", buttons=QMessageBox.Ok)
-
     return app.exec_()
